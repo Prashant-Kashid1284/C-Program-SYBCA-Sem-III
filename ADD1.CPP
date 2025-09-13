@@ -9,10 +9,10 @@ class Addition
 	{
 		x=y=0;
 	}
-	void read()
+	void read(int p,int q)
 	{
-		cout<<"Enter Any Two Numbers"<<endl;
-		cin>>x>>y;
+		x=p;
+		y=q;
 	}
 	void calculate()
 	{
@@ -26,9 +26,13 @@ class Addition
 void main()
 {
 	Addition a;
+	int m,n;
 	clrscr();
-	a.read();
+	cout<<"Enter Any Two Numbers"<<endl;
+	cin>>m>>n;
+	a.read(m,n);
 	a.calculate();
 	a.write();
 	getch();
 }
+
